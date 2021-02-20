@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:>
+<head>
+    <meta charset="UTF-8">
+    <title>UrlRedirect</title>
+</head>
+<body>
+<div id="root">
+    <h1>Main page</h1>
+<!--    <a th:href="@{http://www.google/order/details(id=%{name})}">Link</a>-->
+    <h1>Name: <span th:utext="${name}"></span></h1>
+
+    <table>
+        <tr th:each="var : ${#vars.keySet()}">
+            <td th:text="${var}"></td>
+            <td th:text="${#vars.get(var)}"></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>
