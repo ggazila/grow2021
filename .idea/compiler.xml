@@ -7,14 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring" />
         <module name="leetcode2021" />
         <module name="codewars2021" />
         <module name="java-core-examples" />
+        <module name="demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="codewars2021" target="11" />
+      <module name="demo" target="11" />
       <module name="java-core-examples" target="11" />
       <module name="leetcode2021" target="11" />
       <module name="spring" target="11" />
@@ -22,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
       <module name="spring" options="-parameters" />
     </option>
   </component>
