@@ -10,3 +10,13 @@ public class Example {
         one();
     }
 }
+
+/*
+StackOverflowError
+Результат работы программы:
+
+- Вылетит StackOverflowError
+- Вылетит OutOfMemoryError
+- Код не скомпилируется
+- Цикл будет вечно печатать "Recursion"
+ */
