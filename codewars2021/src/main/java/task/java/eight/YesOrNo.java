@@ -7,10 +7,10 @@ class YesOrNo {
         return b ? "Yes" : "No";
     }
 
-  public static void main(String[] args) {
-    ArrayList<Object> objects = new ArrayList<>();
-    System.out.println(objects.contains(null));
-  }
+    public static void main(String[] args) {
+        ArrayList<Object> objects = new ArrayList<>();
+        System.out.println(objects.contains(null));
+    }
 }
 
 /*

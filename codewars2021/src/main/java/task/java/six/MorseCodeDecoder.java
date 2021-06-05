@@ -4,26 +4,26 @@ public class MorseCodeDecoder {
     public static String decode(String morseCode) {
         // your brilliant code here, remember that you can access the preloaded Morse code table through MorseCode.get(code)
 
-      String[] words = morseCode.split(" {3}");
-      StringBuilder result = new StringBuilder();
+        String[] words = morseCode.split(" {3}");
+        StringBuilder result = new StringBuilder();
 
-      for (String word : words) {
-        String[] letters = word.split(" ");
+        for (String word : words) {
+            String[] letters = word.split(" ");
 
-        for (String letter : letters) {
-          result.append(MorseCode.get(letter));
+            for (String letter : letters) {
+                result.append(MorseCode.get(letter));
+            }
+            result.append(" ");
         }
-        result.append(" ");
-      }
 
-      return result.toString().replace("null","").trim();
+        return result.toString().replace("null", "").trim();
     }
 }
 
 class MorseCode {
-  public static String get(String s) {
-    return s;
-  }
+    public static String get(String s) {
+        return s;
+    }
 }
 
 /*

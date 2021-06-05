@@ -3,7 +3,8 @@ package task.java.seven;
 public class Printer {
 
     public static String printerError(String s) {
-        return String.format("%d/%d",s.replaceAll("[a-m]", "").length(), s.length());
+        return String.format("%d/%d", s.replaceAll("[a-m]", "").length(),
+                s.length());
     }
 }
 

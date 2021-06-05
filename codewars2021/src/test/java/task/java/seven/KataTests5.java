@@ -1,16 +1,17 @@
 package task.java.seven;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 public class KataTests5 {
-  @Test
-  public void exampleTests() {
-    Kata5 k = new Kata5();
+    @Test
+    public void exampleTests() {
+        Kata5 k = new Kata5();
 
-    assertEquals(true, k.isAnagram("foefet", "toffee"));
-    assertEquals(true, k.isAnagram("Buckethead", "DeathCubeK"));
-    assertEquals(true, k.isAnagram("Twoo", "Woot"));
-    assertEquals(false, k.isAnagram("apple", "pale"));
-  }
+        assertEquals(true, Kata5.isAnagram("foefet", "toffee"));
+        assertEquals(true, Kata5.isAnagram("Buckethead", "DeathCubeK"));
+        assertEquals(true, Kata5.isAnagram("Twoo", "Woot"));
+        assertEquals(false, Kata5.isAnagram("apple", "pale"));
+    }
 }

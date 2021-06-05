@@ -3,13 +3,11 @@ package task.java.six;
 import java.util.stream.Stream;
 
 public class Dubstep {
-  public static String SongDecoder (String song)
-  {
-     String[] array = Stream.of(song.split("WUB"))
-             .filter(s -> s.length() > 0)
-             .toArray(String[]::new);
-     return String.join(" ", array);
-   }
+    public static String SongDecoder(String song) {
+        String[] array = Stream.of(song.split("WUB"))
+                .filter(s -> s.length() > 0).toArray(String[]::new);
+        return String.join(" ", array);
+    }
 }
 
 /*

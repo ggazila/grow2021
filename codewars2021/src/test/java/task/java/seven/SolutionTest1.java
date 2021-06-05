@@ -1,15 +1,16 @@
 package task.java.seven;
 
-import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 public class SolutionTest1 {
     @Test
-    public void basicTests(){
-        assertEquals("ybzc",Solution1.solve("xyab","xzca"));
-        assertEquals("ybbzc",Solution1.solve("xyabb","xzca"));
-        assertEquals("abcdxyz",Solution1.solve("abcd","xyz"));
-        assertEquals("zca",Solution1.solve("xxx","xzca"));
+    public void basicTests() {
+        assertEquals("ybzc", Solution1.solve("xyab", "xzca"));
+        assertEquals("ybbzc", Solution1.solve("xyabb", "xzca"));
+        assertEquals("abcdxyz", Solution1.solve("abcd", "xyz"));
+        assertEquals("zca", Solution1.solve("xxx", "xzca"));
     }
 }
 

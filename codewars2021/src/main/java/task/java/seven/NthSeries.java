@@ -2,17 +2,17 @@ package task.java.seven;
 
 public class NthSeries {
 
-	public static String seriesSum(int n) {
+    public static String seriesSum(int n) {
 
-		double result = 1;
+        double result = 1;
 
-		double divider = 4;
-		for (int i = 1; i < n; i++) {
-			result += (double) (1) / divider;
-			divider += 3;
-		}
-		return String.format("%.2f", result);
-	}
+        double divider = 4;
+        for (int i = 1; i < n; i++) {
+            result += (double) (1) / divider;
+            divider += 3;
+        }
+        return String.format("%.2f", result);
+    }
 }
 
 /*

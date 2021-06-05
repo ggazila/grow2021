@@ -1,7 +1,5 @@
 package task.java.seven;
 
-;
-
 class Solution4 {
     public static int solve(String s) {
         String[] split = s.split("");

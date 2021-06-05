@@ -22,6 +22,6 @@ public class FindNextSquareTest {
 
     @Test
     public void test4() {
-        assertEquals(15241630849L,NumberFun.findNextSquare(15241383936L));
+        assertEquals(15241630849L, NumberFun.findNextSquare(15241383936L));
     }
 }

@@ -4,8 +4,8 @@ import java.util.stream.IntStream;
 
 public class Kata2 {
     public static int dontGiveMeFive(int start, int end) {
-        return (int) IntStream.rangeClosed(start, end).filter(value -> !String.valueOf(value).contains("5"))
-                .count();
+        return (int) IntStream.rangeClosed(start, end)
+                .filter(value -> !String.valueOf(value).contains("5")).count();
     }
 }
 

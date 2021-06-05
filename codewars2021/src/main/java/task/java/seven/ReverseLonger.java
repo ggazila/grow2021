@@ -5,7 +5,7 @@ public class ReverseLonger {
     public static String shorterReverseLonger(String a, String b) {
         String shorter = a.length() < b.length() ? a : b;
         String longer = a.length() < b.length() ? b : a;
-        return shorter + new StringBuilder(longer).reverse().toString()
+        return shorter + new StringBuilder(longer).reverse()
                 + shorter;
     }
 

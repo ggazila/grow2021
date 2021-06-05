@@ -18,9 +18,9 @@ class Solution6 {
         return collect.get(collect.size() - 1);
     }
 
-  static int betterStray(int[] numbers) {
-    return Arrays.stream(numbers).reduce(0, (a, b) -> a ^ b);
-  }
+    static int betterStray(int[] numbers) {
+        return Arrays.stream(numbers).reduce(0, (a, b) -> a ^ b);
+    }
 
 }
 

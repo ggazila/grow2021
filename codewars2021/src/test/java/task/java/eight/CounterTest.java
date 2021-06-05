@@ -6,8 +6,8 @@ import org.junit.Test;
 
 public class CounterTest {
     Boolean[] array1 = { null, true, true, true, true, true, true, true, true,
-            false, true, false, true, null, false, true, true, true, true,
-            true, false, false, true, true };
+            false, true, false, true, null, false, true, true, true, true, true,
+            false, false, true, true };
 
     @Test
     public void test() {

@@ -1,9 +1,9 @@
 package task.java.eight;
 
 class Kata2 {
-  public static String numberToString(int num) {
-    return String.valueOf(num);
-  }
+    public static String numberToString(int num) {
+        return String.valueOf(num);
+    }
 }
 
 /*

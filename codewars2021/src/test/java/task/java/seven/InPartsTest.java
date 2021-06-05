@@ -1,8 +1,8 @@
 package task.java.seven;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
 
 public class InPartsTest {
 
@@ -13,7 +13,8 @@ public class InPartsTest {
     @Test
     public void test() {
         System.out.println("Fixed Tests splitInParts");
-        String ans = InParts.splitInParts("supercalifragilisticexpialidocious", 3);
+        String ans = InParts
+                .splitInParts("supercalifragilisticexpialidocious", 3);
         String sol = "sup erc ali fra gil ist ice xpi ali doc iou s";
         testing(ans, sol);
         ans = InParts.splitInParts("HelloKata", 3);

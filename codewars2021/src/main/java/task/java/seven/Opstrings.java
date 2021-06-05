@@ -9,28 +9,18 @@ class Opstrings {
 
     public static void main(String[] args) {
         Date date = new Date(2017, Calendar.JANUARY, 13);
-        Date date2 = new GregorianCalendar(2017, Calendar.JANUARY, 13).getTime();
-        System.out.println("Date " + date + " is friday 13 => " + isFriday13(date));
-        System.out.println("GregorianCalendar " + date2 + " is friday 13 => " + isFriday13(date2));
+        Date date2 = new GregorianCalendar(2017, Calendar.JANUARY, 13)
+                .getTime();
+        System.out.println(
+                "Date " + date + " is friday 13 => " + isFriday13(date));
+        System.out.println(
+                "GregorianCalendar " + date2 + " is friday 13 => " + isFriday13(
+                        date2));
     }
 
-   static boolean isFriday13(Date date) {
+    static boolean isFriday13(Date date) {
         return date.getDay() + 1 == Calendar.FRIDAY && date.getDate() == 13;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public static String vertMirror(String strng) {
         String[] split = strng.split("\n");

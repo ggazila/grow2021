@@ -8,7 +8,8 @@ import java.util.List;
 public class Kata6 {
     public static String reverseLetter(final String str) {
         String replace = str.replaceAll("[^A-Za-z]", "");
-        List<String> strings = new ArrayList<>(Arrays.asList(replace.split("")));
+        List<String> strings = new ArrayList<>(
+                Arrays.asList(replace.split("")));
         Collections.reverse(strings);
 
         for (int i = 0; i < str.length(); i++) {

@@ -3,12 +3,12 @@ package task.java.seven;
 public class Maskify {
     public static String maskify(String str) {
         if (str.length() < 4) {
-          return str;
+            return str;
         }
 
-      String mask = "#".repeat(str.length() - 4);
+        String mask = "#".repeat(str.length() - 4);
 
-      return mask + str.substring(str.length() - 4);
+        return mask + str.substring(str.length() - 4);
     }
 }
 

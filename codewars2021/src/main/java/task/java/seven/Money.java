@@ -1,17 +1,18 @@
 package task.java.seven;
 
 public class Money {
-  public static int calculateYears(double principal, double interest,  double tax, double desired) {
-    int count = 0;
-    double d = principal;
-    while (d < desired) {
-      double interestForYear = d * interest;
-      d += interestForYear - (interestForYear * tax);
-      ++count;
-    }
+    public static int calculateYears(double principal, double interest,
+            double tax, double desired) {
+        int count = 0;
+        double d = principal;
+        while (d < desired) {
+            double interestForYear = d * interest;
+            d += interestForYear - (interestForYear * tax);
+            ++count;
+        }
 
-    return count;
-  }
+        return count;
+    }
 }
 
 /*
